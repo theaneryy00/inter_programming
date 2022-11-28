@@ -8,10 +8,10 @@ public class App {
  int size;
 
         System.out.print("\n"+ "Name that Shape ");
-        System.out.print("Enter size: ");
-        size = scan.nextInt();
+        System.out.print("Enter side: ");
+        side = scan.nextInt();
 
-        switch (size)
+        switch (side)
       {
       case 3 :
          System.out.println("Triangle");
