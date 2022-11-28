@@ -1,0 +1,67 @@
+ import java.util.Scanner;
+
+public class App {
+    static Scanner scan = new Scanner(System.in);
+
+    public static void main(String[] args) {
+           
+ int size;
+
+        System.out.print("\n"+ "Name that Shape ");
+        System.out.print("Enter size: ");
+        size = scan.nextInt();
+
+        switch (size)
+      {
+      case 3 :
+         System.out.println("Triangle");
+
+         break;
+
+      case 4 :
+         System.out.println("Square/Rectangle");
+
+         break;
+
+      case 5 :
+         System.out.println("Pentagon");
+
+         break;
+
+      case 6 :
+         System.out.println("Hexagon");
+
+         break;
+
+      case 7 :
+         System.out.println("Heptagon");
+
+         break;
+
+      case 8 :
+         System.out.println("Octagon");
+
+         break;
+
+      case 9 :
+         System.out.println("Nonagon");
+
+         break;
+      
+      case 10 :
+        System.out.println("Decagon");
+         break; 
+     
+      case 11 :
+        System.out.println("Hendecagon");
+        break; 
+
+      case 12 :
+        System.out.println("Dodecagon");
+        break; 
+
+      default :
+         System.out.println("Invalid input");
+      }
+     }
+}
