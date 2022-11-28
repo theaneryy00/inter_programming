@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class App {
+    static Scanner scan = new Scanner(System.in);
+
+    public static void main(String[] args) {
+char operator;
+              int result, firstNum, secNum;
+      
+              System.out.println("\n"+ "Basic Calculator");
+      
+              Scanner scan = new Scanner(System.in);
+
+              System.out.println("Choose an operator " + "(+ , - , / , *)");
+            
+              System.out.print("Enter operator: ");
+              operator = scan.next().charAt(0);
+      
+              System.out.print("Enter first number: ");
+              firstNum = scan.nextInt();
+      
+              System.out.print("Enter second number: ");
+              secNum = scan.nextInt();
+      
+                                     
+              switch (operator) {
+                  case '+':
+                      result = firstNum + secNum;
+                      System.out.println(firstNum + " + " + secNum + " = " + result);
+                      break;
+                  case '-':
+                      result = firstNum - secNum;
+                      System.out.println(firstNum + " - " + secNum + " = " + result);
+                      break;
+                  case '/':
+                      result = firstNum / secNum;
+                      System.out.println(firstNum + " / " + secNum + " = " + result);
+                      break;
+                  case '*':
+                      result = firstNum * secNum;
+                      System.out.println(firstNum + " * " + secNum + " = " + result);
+                      break;
+                  default:
+                      System.out.println("INVALID OPERATOR");
+                      break;
+              }
+                      scan.close();
+                      
+     }
+}
